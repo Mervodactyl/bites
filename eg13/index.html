@@ -1,0 +1,22 @@
+<!DOCTYPE html5>
+	<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs1 eg 13 order list & reverse list</title>
+	</head>
+	<body ng-controller="MainCtrl">
+		<p>Search: <input type="text" ng-model="query"></p>
+		<table>
+			<tr>
+				<th><a href="#" ng-click="sortfield = 'name'; reverse = !reverse">Country</a></th>
+				<th><a href="#" ng-click="sortfield = 'population'; reverse = !reverse">Population</a></th>
+			</tr>
+			<tr ng-repeat="country in countries | filter: query | orderBy: sortfield : reverse">
+				<td>{{ country.name }}</td>
+				<td>{{ country.population }}</td>
+			</tr>
+		</table>
+	<script src="assets/angular.min.js"></script>
+	<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html5>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs1 eg10 using AJAX</title>
+	</head>
+	<body>
+		<table ng-controller="MainCtrl">
+			<tr>
+				<th>Country</th>
+				<th>Capital City</th>
+				<th>Population</th>
+			</tr>
+			<tr ng-repeat="country in countries">
+				<td>{{ country.name }}</td>
+				<td>{{ country.capital }}</td>
+				<td>{{ country.population }}</td>
+			</tr>
+		</table>
+		<script src="assets/angular.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

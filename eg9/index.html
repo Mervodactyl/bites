@@ -1,0 +1,26 @@
+<!DOCTYPE html5>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs1 eg9</title>
+	</head>
+	<body ng-controller="MainCtrl">
+		<ul>
+			<li ng-repeat="country in countries">Country: {{ country.name }} - Capital: {{ country.capital }} - Population: {{ country.population }}</li>
+		</ul>
+		<table>
+			<tr>
+				<th>Country</th>
+				<th>Capital</th>
+				<th>Population</th>
+			</tr>
+			<tr ng-repeat="country in countries">
+				<td>{{ country.name }}</td>
+				<td>{{ country.capital }}</td>
+				<td>{{ country.population }}</td>
+			</tr>
+		</table>
+		<script src="assets/angular.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

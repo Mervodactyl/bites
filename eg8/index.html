@@ -1,0 +1,20 @@
+<!DOCTYPE html5>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs1 eg8 clearing input</title>
+	</head>
+	<body ng-controller="MainCtrl">
+		<ul>
+			<li ng-repeat="name in names">{{ name }}
+				<button ng-click="removeName(name)">Remove</button>
+			</li>
+		</ul>
+		<form ng-submit="addName()">
+			<p>Add Name: <input type="text" ng-model="newName"></p>
+			<button type="submit">Add</button>
+		</form>
+		<script src="assets/angular.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html5>
+	<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs1 eg11 better way to call http request</title>
+	</head>
+	<body ng-controller="MainCtrl">
+		<table>
+			<tr>
+				<th>Country</th>
+				<th>Population</th>
+			</tr>
+			<tr ng-repeat="country in countries">
+				<td>{{ country.name }}</td>
+				<td>{{ country.population }}</td>
+			</tr>
+		</table>
+		<script src="assets/angular.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
