@@ -1,14 +1,13 @@
-
 var countryApp = angular.module("countryApp", ["ngRoute"]);
 
 countryApp.config(function($routeProvider) {
   $routeProvider.
   when("/", {
-    templateUrl: "name.html",
+    templateUrl: "templates/name.html",
     controller: "CountryListCtrl"
   }).
   when("/:countryName", {
-    templateUrl: "details.html",
+    templateUrl: "templates/details.html",
     controller: "CountryDetailCtrl"
   }).
   otherwise({
