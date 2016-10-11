@@ -13,7 +13,6 @@ countryApp.config(function($routeProvider) {
   otherwise({
     redirectTo: "/"
   });
-
 });
 
 countryApp.controller("CountryListCtrl", ["$scope", "$http", function(scope, http) {
